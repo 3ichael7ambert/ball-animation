@@ -1,0 +1,25 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #131c28;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.ball {
+  /* outline: 2px solid yellow; */
+  --size: 10vmin;
+  height: var(--size);
+  width: var(--size);
+  position: absolute;
+  bottom: 50%;
+  left: calc(50% - var(--size) / 2);
+  display: none;
+}
+
+.ball.splitting {
+  display: block;
+}
